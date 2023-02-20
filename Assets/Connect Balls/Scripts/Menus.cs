@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using Jackal;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
@@ -8,7 +9,7 @@ using UnityEngine.EventSystems;
 
 namespace ConnectBalls
 {
-	public class Menus : MonoBehaviour
+	public class Menus : Singleton<Menus>
 	{
 
 		public GameObject pauseUI;
